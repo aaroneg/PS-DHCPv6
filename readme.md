@@ -14,14 +14,14 @@ This is used to automate creating DHCPv6 scopes on Windows DHCP servers.
 
 Not that anyone has asked but here are a few questions I anticipate.
 
-Q) Why doesn't this handle reservations?
+Q) Why doesn't this handle reservations?  
 A) I don't have a need for reservations at the moment.
 
-Q) Why isn't there an option to set DNS server addresses?
+Q) Why isn't there an option to set DNS server addresses?  
 A) In my environment, the DNS server settings are defined above the scope level, at the server level. 
 
-Q) Why aren't you setting router addresses? That's a normal thing to do at the scope level!
+Q) Why aren't you setting router addresses? That's a normal thing to do at the scope level!  
 A) IPv6 uses router announcements, not DHCP scope options for this.
 
-Q) Why not use a datasource like a CSV instead?
+Q) Why not use a datasource like a CSV instead?  
 A) You are welcome to modify the code to point to your CSV instead. Probably wouldn't take a lot of effort. I created this for a relatively small set of networks so it was less work to make a hash table.
