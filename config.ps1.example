@@ -1,9 +1,5 @@
 $DHCPServers=@('dhcpserver1.example.com','dhcpserver2.example.com')
 
-# The DHCP6Scopes all include the vlan, this is not used in the code but is kept to
-# help the person running the code tie networks to vlans where those networks exist.
-# The IPv6 network address likely will not resemble the IPv4 address space or vlan number.
-
 $DHCP6Scopes=@(
     @{VLAN=10;Name='clients';Network='2001:0DB8:7::/64'}
     @{VLAN=11;Name='servers';Network='2001:0DB8:8::/64'}
